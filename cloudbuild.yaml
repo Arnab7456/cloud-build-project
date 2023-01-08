@@ -4,12 +4,12 @@ steps:
       [
         'build',
         '-t',
-        'gcr.io/cloud-build-project/arnab7456/cloud-build-project:$SHORT_SHA',
+        'gcr.io/cloud-build-project/gcr.io/brave-drummer-370205/github.com/arnab7456/cloud-build-project:d0359efa08d7ff69441b5ff2a713965301bd8abf',
         '.',
       ]
   - name: 'gcr.io/cloud-builders/docker'
     args:
       [
         'push',
-        'gcr.io/cloud-build-project/arnab7456/cloud-build-project:$SHORT_SHA',
+        'gcr.io/cloud-build-project/gcr.io/brave-drummer-370205/github.com/arnab7456/cloud-build-project:d0359efa08d7ff69441b5ff2a713965301bd8abf',
       ]
